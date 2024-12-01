@@ -1,0 +1,37 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Security Dashboard</h1>
+
+<!-- Form for user to input the website name -->
+<form id="websiteForm">
+    <label for="website-name">Enter Website Name:</label>
+    <input type="text" id="website-name" name="websiteName" placeholder="e.g., www.example.com" required />
+    <button type="submit">Get Details</button>
+</form>
+<!-- Loading Status Indicator -->
+<div id="loading-status" style="margin-top: 10px; color: blue;"></div>
+
+<!-- Last Updated Time -->
+<div id="last-updated" style="margin-top: 10px; font-style: italic; color: gray;"></div>
+
+<div id="intrusions">
+    <h3>Intrusion Alerts</h3>
+    <ul id="intrusion-list"></ul>
+</div>
+<div id="vulnerabilities">
+    <h3>Vulnerabilities</h3>
+    <ul id="vulnerability-list"></ul>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
